@@ -7,7 +7,7 @@
 
 **Industrial Air‑Compressor IoT Monitoring System** is developed based on Qt6. It provides complete functions including air‑compressor device data acquisition, real‑time monitoring, over‑limit alarm, historical data storage, trend curve visualization and user permission management.
 
-![Application Screenshot](.demo.png)
+![Application Screenshot](./demo.png)
 - Communication Protocol: **Modbus‑RTU (Serial Port) / Modbus‑TCP**
 - Database: Local SQLite database
 - Plotting Component: QCustomPlot
