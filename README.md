@@ -6,6 +6,7 @@
 ## 📖 项目简介
 **工业空压机物联网测控系统**，基于 Qt6 开发，实现空压机设备数据采集、实时监控、超限报警、历史数据存储、趋势曲线可视化、用户权限管理等完整功能。
 
+![系统运行截图](.demo.png)
 - 通信协议：**Modbus‑RTU（串口） / Modbus‑TCP**
 - 数据库：SQLite 本地数据库
 - 绘图组件：QCustomPlot
@@ -65,6 +66,7 @@ README_EN.md                     # 英文文档
 ```
 
 ## ⚙️ 编译与运行
+### 可以下载Release直接使用
 ### 环境要求
 - Qt 6.11+ 版本（需要安装组件：`qtmodbus`, `qtserialport`, `qtsql-sqlite`）
 - 支持 Windows / Linux
@@ -72,17 +74,18 @@ README_EN.md                     # 英文文档
 ### 编译步骤
 1. Clone 本项目到本地
 ```bash
-git clone https://github.com/YourName/AirCompressorMonitor.git
-cd AirCompressorMonitor
+git clone https://github.com/kingrzkx/Simulated-Industrial-Air-Compressor-Condition-Monitoring-System.git
+cd CompressorMonitor
 ```
 
-2. 使用 QtCreator 打开 `AirCompressorMonitor.pro`
-3. 检查 pro 文件模块配置，确保开启 `modbus、serialport、sql、printsupport`
+2. 使用 QtCreator 打开 `CompressorMonitor.pro`
+3. 检查 pro 文件模块配置，确保开启 `modbus、serialport、sql、printsupport、modisim32`
 4. 构建项目，编译生成可执行程序
 5. 运行程序
    - 默认账号：
      - 管理员：`admin` / `admin123`
      - 普通用户：`user` / `user123`
+6. 在Modsim32中打开ModSimTEST文件，连接对应端口或TCP
 
 > 
 > 💡提示：程序运行后自动生成 `compressor_data.db` SQLite 数据库文件。
